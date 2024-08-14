@@ -1,0 +1,123 @@
+html {
+    background-color: var(--green-2);
+   
+
+}
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+    .login-box {
+    margin-top: 1rem;
+    background-color: var(--grey-1);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 60rem;
+    
+    .logo-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 12rem;
+    }
+
+    &-inputs {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 2.5rem 6rem;
+        
+
+
+        input {
+            padding: 1.3rem;
+            font-size: 1.8rem;
+            border: none;
+            border-left: 5px solid var(--logo-color);
+            margin-bottom: 2.5rem;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  
+        }
+
+        .login-btn {
+            padding: 1rem;
+            background-color: var(--orange-1);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--white);
+            border: none;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--black);
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                transition: 0.2s all;
+            }
+            
+        }
+
+        label {
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        
+        // REMEMBER ME & FORGOT PASSWORD
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+
+            .forgot-pass:link, .forgot-pass:visited {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.8rem;
+                color: var(--orange-1);
+
+                &:hover {
+                    color: var(--black);
+                    transition: 0.3s all;
+                }
+            }
+
+            .remember-label {
+           
+                display: flex;
+                gap: 0.6rem;
+                
+    
+                p {
+                    margin-bottom: 0;
+                    
+                    font-weight: 500;
+                    cursor: pointer;
+                    font-size: 1.8rem;
+                    
+                }
+    
+                .remember-me {
+                   height: 2rem;
+                   width: 2rem;
+                }
+
+               
+            }
+        }
+
+        
+
+    }
+    
+    }
+}

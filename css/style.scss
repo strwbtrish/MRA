@@ -1,0 +1,33 @@
+@import "login";
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --logo-color: #FF9549;
+    --orange-1: #EF4F07;
+    --green-1: #528265;
+    --green-2: #0B7414;
+    --white: #fff;
+    --black: #000;
+    --grey-1: #EFEFEF;
+
+}
+
+
+@font-face {
+    font-family: Figtree;
+    src: url(fonts/Figtree-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Figtree, sans-serif;
+}

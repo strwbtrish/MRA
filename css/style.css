@@ -1,0 +1,115 @@
+html {
+  background-color: var(--green-2);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.login-container .login-box {
+  margin-top: 1rem;
+  background-color: var(--grey-1);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 60rem;
+}
+.login-container .login-box .logo-div {
+  display: flex;
+  justify-content: center;
+}
+.login-container .login-box .logo {
+  width: 12rem;
+}
+.login-container .login-box-inputs {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 6rem;
+}
+.login-container .login-box-inputs input {
+  padding: 1.3rem;
+  font-size: 1.8rem;
+  border: none;
+  border-left: 5px solid var(--logo-color);
+  margin-bottom: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.login-container .login-box-inputs .login-btn {
+  padding: 1rem;
+  background-color: var(--orange-1);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.login-container .login-box-inputs .login-btn:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: 0.2s all;
+}
+.login-container .login-box-inputs label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.login-container .login-box-inputs .form-options {
+  display: flex;
+  justify-content: space-between;
+}
+.login-container .login-box-inputs .form-options .forgot-pass:link, .login-container .login-box-inputs .form-options .forgot-pass:visited {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--orange-1);
+}
+.login-container .login-box-inputs .form-options .forgot-pass:link:hover, .login-container .login-box-inputs .form-options .forgot-pass:visited:hover {
+  color: var(--black);
+  transition: 0.3s all;
+}
+.login-container .login-box-inputs .form-options .remember-label {
+  display: flex;
+  gap: 0.6rem;
+}
+.login-container .login-box-inputs .form-options .remember-label p {
+  margin-bottom: 0;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.login-container .login-box-inputs .form-options .remember-label .remember-me {
+  height: 2rem;
+  width: 2rem;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --logo-color: #FF9549;
+  --orange-1: #EF4F07;
+  --green-1: #528265;
+  --green-2: #0B7414;
+  --white: #fff;
+  --black: #000;
+  --grey-1: #EFEFEF;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(fonts/Figtree-VariableFont_wght.ttf);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+}/*# sourceMappingURL=style.css.map */
