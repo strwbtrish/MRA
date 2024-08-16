@@ -4,6 +4,27 @@ html {
 
 }
 
+// media query
+$bigLaptop: 1600px;
+$tablet: 700px;
+$phone: 520px;
+$smallPhone: 420px;
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bigLaptop) {
+        font-size: 61%;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 58%;
+    }
+
+    @media only screen and (max-width: $phone) {
+        font-size: 56%;
+    }
+}
 
 
 .login-container {
@@ -15,11 +36,30 @@ html {
 
 
     .login-box {
-    margin-top: 1rem;
     background-color: var(--grey-1);
     padding: 2rem;
     border-radius: 20px;
     width: 60rem;
+
+    @media only screen and (max-width: $bigLaptop) {
+        width: 58rem;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        width: 52rem;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        width: 48rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+        width: 40rem;
+    }
+
+    @media only screen and (max-width: $smallPhone) {
+        width: 30rem;
+    }
     
     .logo-div {
         display: flex;
@@ -28,6 +68,14 @@ html {
 
     .logo {
         width: 12rem;
+
+        @media only screen and (max-width: $phone) {
+            width: 10rem;
+        }
+
+        @media only screen and (max-width: $smallPhone) {
+            width: 8rem;
+        }
     }
 
     &-inputs {
@@ -36,7 +84,15 @@ html {
         flex-direction: column;
         
         padding: 2.5rem 6rem;
-        
+
+        @media only screen and (max-width: $phone) {
+            padding: 2.5rem 2.5rem;
+        }
+
+        @media only screen and (max-width: $smallPhone) {
+            padding: 3rem 1rem;
+
+        }
 
 
         input {
@@ -46,6 +102,17 @@ html {
             border-left: 5px solid var(--logo-color);
             margin-bottom: 2.5rem;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+            
+         @media only screen and (max-width: $bigLaptop) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width: $phone) {
+            font-size: 1.4rem;
+        }
+
+        
   
         }
 
@@ -57,6 +124,15 @@ html {
             color: var(--white);
             border: none;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+            @media only screen and (max-width: $phone) {
+                font-size: 1.6rem;
+            }
+
+            @media only screen and (max-width: $smallPhone) {
+                font-size: 1.4rem;
+                padding: 0.8rem;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -71,6 +147,14 @@ html {
             margin-bottom: 1rem;
             font-weight: 600;
             font-size: 1.8rem;
+
+            @media only screen and (max-width: $phone) {
+                font-size: 1.6rem;
+            }
+
+            @media only screen and (max-width: $smallPhone) {
+                font-size: 1.4rem;
+            }
         }
 
         
@@ -84,6 +168,20 @@ html {
                 font-weight: 600;
                 font-size: 1.8rem;
                 color: var(--orange-1);
+
+                @media only screen and (max-width: $bigLaptop) {
+                    font-size: 1.6rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    font-size: 1.4rem;
+                }
+
+                @media only screen and (max-width: $smallPhone) {
+                    font-size: 1.2rem;
+                }
+
+               
 
                 &:hover {
                     color: var(--black);
@@ -99,16 +197,39 @@ html {
     
                 p {
                     margin-bottom: 0;
-                    
                     font-weight: 500;
                     cursor: pointer;
                     font-size: 1.8rem;
-                    
+
+                    @media only screen and (max-width: $bigLaptop) {
+                        font-size: 1.6rem;
+                    }
+
+                    @media only screen and (max-width: $phone) {
+                        font-size: 1.4rem;
+                    }
+
+                    @media only screen and (max-width: $smallPhone) {
+                        font-size: 1.2rem;
+                    }
+    
+    
                 }
     
                 .remember-me {
                    height: 2rem;
                    width: 2rem;
+
+                   @media only screen and (max-width: $phone) {
+                    height: 1.8rem;
+                    width: 1.8rem;
+                }
+
+                @media only screen and (max-width: $smallPhone) {
+                    height: 1.4rem;
+                    width: 1.4rem;
+                }
+
                 }
 
                

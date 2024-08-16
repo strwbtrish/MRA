@@ -2,6 +2,25 @@ html {
   background-color: var(--green-2);
 }
 
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 1600px) {
+  html {
+    font-size: 61%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  html {
+    font-size: 56%;
+  }
+}
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -10,11 +29,35 @@ html {
   min-height: 100vh;
 }
 .login-container .login-box {
-  margin-top: 1rem;
   background-color: var(--grey-1);
   padding: 2rem;
   border-radius: 20px;
   width: 60rem;
+}
+@media only screen and (max-width: 1600px) {
+  .login-container .login-box {
+    width: 58rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-container .login-box {
+    width: 52rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .login-container .login-box {
+    width: 48rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box {
+    width: 30rem;
+  }
 }
 .login-container .login-box .logo-div {
   display: flex;
@@ -23,11 +66,31 @@ html {
 .login-container .login-box .logo {
   width: 12rem;
 }
+@media only screen and (max-width: 520px) {
+  .login-container .login-box .logo {
+    width: 10rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box .logo {
+    width: 8rem;
+  }
+}
 .login-container .login-box-inputs {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   padding: 2.5rem 6rem;
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs {
+    padding: 2.5rem 2.5rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs {
+    padding: 3rem 1rem;
+  }
 }
 .login-container .login-box-inputs input {
   padding: 1.3rem;
@@ -37,6 +100,16 @@ html {
   margin-bottom: 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
+@media only screen and (max-width: 1600px) {
+  .login-container .login-box-inputs input {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs input {
+    font-size: 1.4rem;
+  }
+}
 .login-container .login-box-inputs .login-btn {
   padding: 1rem;
   background-color: var(--orange-1);
@@ -45,6 +118,17 @@ html {
   color: var(--white);
   border: none;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs .login-btn {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs .login-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
 }
 .login-container .login-box-inputs .login-btn:hover {
   cursor: pointer;
@@ -57,6 +141,16 @@ html {
   font-weight: 600;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs label {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs label {
+    font-size: 1.4rem;
+  }
+}
 .login-container .login-box-inputs .form-options {
   display: flex;
   justify-content: space-between;
@@ -66,6 +160,21 @@ html {
   font-weight: 600;
   font-size: 1.8rem;
   color: var(--orange-1);
+}
+@media only screen and (max-width: 1600px) {
+  .login-container .login-box-inputs .form-options .forgot-pass:link, .login-container .login-box-inputs .form-options .forgot-pass:visited {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs .form-options .forgot-pass:link, .login-container .login-box-inputs .form-options .forgot-pass:visited {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs .form-options .forgot-pass:link, .login-container .login-box-inputs .form-options .forgot-pass:visited {
+    font-size: 1.2rem;
+  }
 }
 .login-container .login-box-inputs .form-options .forgot-pass:link:hover, .login-container .login-box-inputs .form-options .forgot-pass:visited:hover {
   color: var(--black);
@@ -81,9 +190,36 @@ html {
   cursor: pointer;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 1600px) {
+  .login-container .login-box-inputs .form-options .remember-label p {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs .form-options .remember-label p {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs .form-options .remember-label p {
+    font-size: 1.2rem;
+  }
+}
 .login-container .login-box-inputs .form-options .remember-label .remember-me {
   height: 2rem;
   width: 2rem;
+}
+@media only screen and (max-width: 520px) {
+  .login-container .login-box-inputs .form-options .remember-label .remember-me {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .login-container .login-box-inputs .form-options .remember-label .remember-me {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
 }
 
 *, *::after, *::before {
@@ -106,10 +242,6 @@ html {
   font-family: Figtree;
   src: url(fonts/Figtree-VariableFont_wght.ttf);
 }
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: Figtree, sans-serif;
 }/*# sourceMappingURL=style.css.map */
